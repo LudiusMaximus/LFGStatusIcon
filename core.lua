@@ -2,9 +2,9 @@
 
 local dungeonButton = QueueStatusButton
 
--- Classic
+-- MIST Classic (used to be MiniMapLFGFrame before 5.5.4)
 if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
-  dungeonButton = MiniMapLFGFrame
+  dungeonButton = LFGMinimapFrameIcon
 end
 
 
