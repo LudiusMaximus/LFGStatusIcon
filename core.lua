@@ -12,12 +12,19 @@ end
 local indicator = {}
 local update = function()
 
-  -- Try LFD
-  local hasData, _, tankNeeds, healerNeeds, dpsNeeds, totalTanks, totalHealers, totalDPS, _, instanceSubType, _, _, _, _, _, myWait, queuedTime = GetLFGQueueStats(LE_LFG_CATEGORY_LFD)
-
-  if not hasData then
-    -- Try RF
-    hasData, _, tankNeeds, healerNeeds, dpsNeeds, totalTanks, totalHealers, totalDPS, _, instanceSubType, _, _, _, _, _, myWait, queuedTime = GetLFGQueueStats(LE_LFG_CATEGORY_RF)
+  -- Try each LFG category (like Blizzard's QueueStatusFrame does), so besides LE_LFG_CATEGORY_LFD
+  -- and LE_LFG_CATEGORY_RF we also catch role-based queues such as Decor Duels. Scenarios, training
+  -- grounds and World PvP have no meaningful roles, so we skip them.
+  local hasData, _, tankNeeds, healerNeeds, dpsNeeds, totalTanks, totalHealers, totalDPS, instanceSubType
+  for category = 1, NUM_LE_LFG_CATEGORYS do
+    hasData, _, tankNeeds, healerNeeds, dpsNeeds, totalTanks, totalHealers, totalDPS, _, instanceSubType = GetLFGQueueStats(category)
+    if hasData
+    and category ~= LE_LFG_CATEGORY_SCENARIO
+    and category ~= LE_LFG_CATEGORY_WORLDPVP
+    and instanceSubType ~= LFG_SUBTYPEID_TRAINING_GROUNDS then
+      break
+    end
+    hasData = nil
   end
 
   if not hasData then
