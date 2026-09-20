@@ -1,13 +1,37 @@
-﻿## Interface: 120100
+﻿## Interface: 120100, 50504
 ## Version: @project-version@
 ## Title: LFG Status Icon
 ## IconAtlas: groupfinder-eye-single
 ## Author: TotalPackage, LudiusMaximus
+
 ## Notes: Adds queue status indicators to the LFG "eye" icon.
-## Notes-ruRU: Добавляет индикаторы состояния очереди к значку «глаза» LFG
+## Notes-deDE: Fügt dem LFG-„Auge“-Symbol Statusanzeigen für die Warteschlange hinzu.
+## Notes-esES: Añade indicadores de estado de la cola al icono del "ojo" de LFG.
+## Notes-esMX: Agrega indicadores de estado de la cola al icono del "ojo" de LFG.
+## Notes-frFR: Ajoute des indicateurs d'état de la file d'attente à l'icône de l'« œil » du LFG.
+## Notes-itIT: Aggiunge indicatori di stato della coda all'icona dell'"occhio" del LFG.
+## Notes-koKR: LFG "눈" 아이콘에 대기열 상태 표시기를 추가합니다.
+## Notes-ptBR: Adiciona indicadores de status da fila ao ícone de "olho" do LFG.
+## Notes-ruRU: Добавляет индикаторы состояния очереди к значку «глаза» LFG.
+## Notes-zhCN: 为 LFG（寻求组）的“眼睛”图标添加队列状态指示。
+## Notes-zhTW: 為 LFG（尋找隊伍）的「眼睛」圖示加入佇列狀態指示。
+
+## Category: Dungeons & Raids
+## Category-deDE: Dungeons & Schlachtzüge
+## Category-esES: Mazmorras y bandas
+## Category-esMX: Calabozos y bandas
+## Category-frFR: Donjons et raids
+## Category-itIT: Spedizioni e incursioni
+## Category-koKR: 던전 및 공격대
+## Category-ptBR: Masmorras e Raides
+## Category-ruRU: Подземелья и рейды
+## Category-zhCN: 地下城和团队副本
+## Category-zhTW: 地城與團隊
+
 ## X-Curse-Project-ID: 21457
 ## X-WoWI-ID: 15273
 ## X-Wago-ID: rNkPO36a
+
 ## X-Donate: PayPal:ludiusmaximus@gmail.com
 ## X-License: The MIT License (MIT)
 
