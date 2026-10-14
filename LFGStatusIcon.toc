@@ -1,4 +1,4 @@
-﻿## Interface: 120100, 50504
+﻿## Interface: 120105, 50504
 ## Version: @project-version@
 ## Title: LFG Status Icon
 ## IconAtlas: groupfinder-eye-single
